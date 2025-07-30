@@ -88,7 +88,7 @@ MoRE provides the capability to continue using traditional WebSphere Application
 
 In this lab, you will extend an existing WebSphere ND Cell, using the MoRE feature pak, for managed Liberty servers to manage and run Java 17 / Jakarta EE 10 (subset) applications using the familiar WebSphere administrative mode and admin console.
 
-The final MoRE cell looks like in the diagram below, fronted by an IBM HTTP Server for load distribution.
+The final MoRE cell looks like in the diagram below, it will be fronted by an IBM HTTP Server for load distribution.
 
 <kbd>![](./images/media/MoRE_Lab-Toplogy.png)</kbd>
 
