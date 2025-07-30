@@ -22,7 +22,7 @@ After the lab setup, you will be able to skip part 1 (AMA) and move directly to 
 
 
 ## Notices and disclaimers
-<details open>
+<details>
 <summary>© 2025 International Business Machines Corporation. No part of this document may be reproduced or transmitted in any form without written permission from IBM.</summary>
 
 © 2025 International Business Machines Corporation. No part of this document may be reproduced or transmitted in any form without written permission from IBM.
