@@ -12,7 +12,7 @@ At the end of this lab, you should be able to:
   
 The lab consists of two parts:
 
-- Part 1: AMA - Analyze the application WhereAmI using AMA and modenrize it using the AMA Dev Tools
+- Part 1: AMA - Analyze the application WhereAmI using AMA and modernize it using the AMA Dev Tools
 - Part 2: MoRE - Create in MoRE a managed Liberty cluster and deploy the application
 
 You will need an estimated **60 to 90 minutes** to complete all parts of the lab.
@@ -364,7 +364,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 </details>
 
 <details open>
-<Summary> Prepare Application Modernization Accelerator> </Summary>
+<Summary> Run the Application Modernization Accelerator data collector </Summary>
 
 
 ### Run the AMA data collector to scan the environment 
