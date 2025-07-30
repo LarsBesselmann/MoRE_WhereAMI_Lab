@@ -128,11 +128,11 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
     
     c. Click on the **"vnc.html"** link to open the lab environment through the **noVNC** interface. 
     
-    ![](./images/media/vnc-link.png)
+    ![](./images/media/tz_vnc-link.png)
     
     d. Click the **Connect** button 
     
-      ![](./images/media/vnc-connect.png)
+      ![](./images/media/tz_vnc-connect.png)
 
 
     e. Enter the password as:  **`IBMDem0s!`**. Then click the **`Send Credentials`** button to access the lab environment. 
