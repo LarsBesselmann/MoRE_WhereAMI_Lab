@@ -440,7 +440,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 	<kbd>![](./images/media/AMA_Visualization.png)</kbd>
 
 
-8. As you can see, AMA has dsicovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
+8. As you can see, AMA has discovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
 
 	<kbd>![](./images/media/AMA_Visualization2.png)</kbd>
 
@@ -452,6 +452,10 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 7. Switch back to the **Visualization** tab.
 
+The data collection has been created and successfully uploaded. 
+
+Hint: As backup, you can find the data collection also at: 
+		~/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Collection/
 </details>
 
 The preparation is now finished
