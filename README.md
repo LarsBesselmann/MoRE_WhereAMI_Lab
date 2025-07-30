@@ -430,72 +430,41 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 		<kbd>![AMA_Collector_uploaded](./images/media/AMA_Collector_uploaded.png)</kbd>
 		
-6. Switch back to the browser and open the **MoRE_Demo** workspace.
+	Hint: As backup, you can find a data collection named **Dmgr01.zip** also at 
+		**~/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Collection/**
+
+
+</details>
+
+<details open>
+<Summary> Use the Application Modernization Accelerator to analyize the application </Summary>
+
+### Use AMA to identify what needs to be changed to modernize the application for MoRE
+
+1. Switch back to the browser and open the **MoRE_Demo** workspace.
 
 	<kbd>![AMA_MoRE_workspace](./images/media/AMA_MoRE_workspace.png)</kbd>
 
 
-7. AMA will open the **Visualization** tab. Click on the button to close the minimap. 
+2. AMA will open the **Visualization** tab. Click on the button to close the minimap. 
 
 	<kbd>![](./images/media/AMA_Visualization.png)</kbd>
 
 
-8. As you can see, AMA has discovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
+3. As you can see, AMA has discovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
 
 	<kbd>![](./images/media/AMA_Visualization2.png)</kbd>
 
 	Click on the **Assessment** tab.
 
-9. You can see the assessment for the different target applications. Select as target Liberty administered from WebSphere (MoRE) and you can see, that the application can be migrated to MoRE but has some issues that must be fixed.
+4. You can see the assessment for the different target applications. Select as target Liberty administered from WebSphere (MoRE) and you can see, that the application can be migrated to MoRE but has some issues that must be fixed.
 
 	<kbd>![AMA_Assessment](./images/media/AMA_Assessment.png)</kbd>
 
-7. Switch back to the **Visualization** tab.
-
-The data collection has been created and successfully uploaded. 
-
-Hint: As backup, you can find the data collection also at: 
-		~/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Collection/
-</details>
-
-The preparation is now finished
+	Click on the WhereAmI application to get more insight about the issues
 
 
-## Demo the end-to-end flow
-
-
-### Demo the application running in tWAS
-
-1. 	Access via browser the WebSphere Admin Console via URL: https://localhost:9043/ibm/console, User ID: techzone, password: **IBMDem0s!**
-
-2. Show that the application has been started.
-
-	<kbd>![](./images/media/WhereAmI_tWAS_started.png)</kbd>
-
-	<kbd>![](./images/media/WhereAmI_tWAS_deployed.png)</kbd>
-
-3. Access the application via IHS: http://localhost:8080/tWAS/WhereAmI
-
-	<kbd>![](./images/media/WhereAmI_tWAS1.png)</kbd>
-
-4. Reload the page and you should see that the application switches between the two tWAS servers.
-
-	<kbd>![](./images/media/WhereAmI_tWAS2.png)</kbd>
-
-
-### Demo the assessment via AMA
-
-1. Explain that the data colection has been created before to save time
-
-2. Show in the **Visualization** tab that there are no dependencies to other applications
-
-	<kbd>![](./images/media/AMA_Visualization.png)</kbd>
-
-3. Switch to the **Assessment** tab. Select MoRE as as target, and show that the application can be migrated to MoRE but has some issues that must be fixed.
-
-	<kbd>![](./images/media/AMA_Assessment.png)</kbd>
-
-4. Click on the WhereAmI application to get more insight about the issues
+5. As you can see, Click on the WhereAmI application to get more insight about the issues
 
 	<kbd>![](./images/media/AMA_WhereAmI_Assessment1.png)</kbd>
 
