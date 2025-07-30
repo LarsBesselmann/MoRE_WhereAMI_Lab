@@ -286,26 +286,40 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 4. 	 Use the **Activities** Icon to switch to the toolbar, then click the **Firefox** icon to open a Browser window.
 
-   	 <kbd>![Toolbar_Terminal](./images/media/tz_Toolbar_Firefox.png)</kbd>
+   	 <kbd>![Toolbar_Firefox](./images/media/tz_Toolbar_Firefox.png)</kbd>
 
 
-5. Access via browser the WebSphere Admin Console via URL: https://localhost:9043/ibm/console, User ID: techzone, password: **IBMDem0s!**
+5. Access via browser the WebSphere Admin Console via URL: https://localhost:9043/ibm/console.
 
-6. Enable the command assistance
+	If a security warning is displayed, click on **Advanced**, then click on **Accept the Risk and Continue**. 
 
-From the Admin Console, set the console preferences to enable command assistance and log command assistance. This will allow to see the wsadmin commands for UI driven tasks.
+	<kbd>![Firefox_Security_Risk](./images/media/tz_Browser_SecurityRisk_1.png)</kbd>
 
-	a. Navigation: System administration > Console preferences
+6. On the **WAS Login panel**, enter User ID: techzone, password: **IBMDem0s!**
 
-	b. Select the following options:
+	<kbd>![WAS_Login_Panel](./images/media/WAS_Login_Panel.png)</kbd>
+
+
+7. Enable the command assistance
+
+	From the Admin Console, set the console preferences to enable command assistance and log command assistance. This will allow to see the wsadmin commands for UI driven tasks.
+
+	1. Navigate to **System administration > Console preferences**
+	2. Select the following options:
 
 			Enable command assistance notifications
 			Log command assistance commands
 
+		<kbd>![WAS_Login_Panel](./images/media/WAS_Enable_CommandAssistance.png)</kbd>
 
-6. Start the cluster tWASCluster1
 
-	Use either the Admin Console or the following script:
+8. Start the cluster tWASCluster1
+
+	1. Navigate to **Servers > Clusters > WebSphere application server clusters**, select the cluster and click on **Start**.
+
+	<kbd>![WAS_Login_Panel](./images/media/WAS_start_tWAS_Cluster.png)</kbd>
+
+	Alternatively you can run the following script:
 
 		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_start.py 
 
