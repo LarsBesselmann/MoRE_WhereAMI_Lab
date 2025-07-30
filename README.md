@@ -58,10 +58,10 @@ IBM, the IBM logo, and ibm.com are trademarks of International Business Machines
 </details>
 
 ## Lab requirements
-<details open>
+<details>
 
 <summary>The section contains details about the environment.
-If you use the lab environment that we prepared for this lab. It already has the prerequisite software installed and configured.</summary>
+If you use the lab environment that has been prepared for the lab, it has already the prerequisite software installed and configured.</summary>
 
 
 ### Required software
