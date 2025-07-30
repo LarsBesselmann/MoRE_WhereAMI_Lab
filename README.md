@@ -178,11 +178,11 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
     a. From the environment VM, click on the **twisty** on the noNC control pane to open the menu.  
 
-    ![fit to window](./images/media/z-twisty.png)
+    ![fit to window](./images/media/tz_z-twisty.png)
 
     b. To increase the visible area, click on `Settings > Scaling Mode` and set the value to `Remote Resizing`
       
-     ![fit to window](./images/media/z-remote-resize.png)
+     ![fit to window](./images/media/tz_z-remote-resize.png)
 
 
 2.  You can copy / paste text from the lab guide into the lab environment using the clipboard in the noVNC viewer. 
@@ -191,7 +191,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
     
     b. Click the **Clipboard** icon and **paste** the text into the noVNC clipboard
 
-    ![fit to window](./images/media/paste.png)
+    ![fit to window](./images/media/tz_paste.png)
     
     c. Paste the text into the VM, such as to a terminal window, browser window, etc. 
 
