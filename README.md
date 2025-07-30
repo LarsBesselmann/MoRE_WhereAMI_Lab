@@ -238,7 +238,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 3. Create a working directory and download the project
 
 		mkdir -p ~/Student/labs
-		git clone https://github.com/LarsBesselmann/MoRE_WhereAMI.git ~/Student/labs
+		git clone https://github.com/LarsBesselmann/MoRE_WhereAMI_lab.git ~/Student/labs
 
 4. Switch to the directory WhereAmI_MoRE_Demo_assets and uzip the initial project
 
