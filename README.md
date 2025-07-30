@@ -225,11 +225,10 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ## Preparation:
 
+<details open>
+<Summary> Download and build the application> </Summary>
 
 ### Prepare and build the maven project
-
-<details open>
-<Summary> How to build the application> <Summary >
 
 
 1.  **Close** all **Terminal** windows and **Browser** Tabs used in any previous lab.
@@ -266,6 +265,10 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 	The generated war file is: target/WhereAmI-2.0.0.war
 
+</details>
+
+<details open>
+<Summary> Prepare the MoRE cell> </Summary>
 
 ### Prepare the MoRE cell and deploy the application
 
@@ -358,7 +361,13 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 	<kbd>![](./images/media/WhereAmI_tWAS2.png)</kbd>
 
 
-### Prepare AMA
+</details>
+
+<details open>
+<Summary> Prepare Application Modernization Accelerator> </Summary>
+
+
+### Use AMA to scan the environment 
 
 1. Start AMA
 
@@ -396,6 +405,8 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 	<kbd>![](./images/media/AMA_Assessment.png)</kbd>
 
 7. Switch back to the **Visualization** tab.
+
+</details>
 
 
 ## Demo the end-to-end flow
