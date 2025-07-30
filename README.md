@@ -268,7 +268,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 </details>
 
 <details open>
-<Summary> Prepare the MoRE cell> </Summary>
+<Summary> Prepare the MoRE cell </Summary>
 
 ### Prepare the MoRE cell and deploy the application
 
@@ -365,10 +365,9 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ## Assess the application for target MoRE
 
-<details open>
-<Summary> Run the Application Modernization Accelerator data collector </Summary>
-
 ### Run the AMA data collector to scan the environment 
+<details open>
+<Summary> Run the Application Modernization Accelerator data collector to scan the WebSphere environment The generated data collection will be uploaded automatically.</Summary>
 
 1. Start AMA
 
@@ -437,12 +436,12 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 </details>
 
+### Use AMA to identify required code changes for target MoRE
 <details open>
-<Summary> Use the Application Modernization Accelerator to analyze the application </Summary>
+<Summary> Use the Application Modernization Accelerator to analyze the application and identify required code changes. Generate a migration bundle which then will be used in the AMA Dev Tools </Summary>
 
-### Use AMA to identify what needs to be changed to modernize the application for MoRE
 
-1. Switch back to the browser and open the **MoRE_Demo** workspace.
+1. Switch to the browser and access AMA via the URL **https://rhel9-base.gym.lan:3001.**, then open the **MoRE_Demo** workspace.
 
 	<kbd>![AMA_MoRE_workspace](./images/media/AMA_MoRE_workspace.png)</kbd>
 
@@ -464,41 +463,63 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 	<kbd>![AMA_Upload_Data4](./images/media/AMA_Upload_Data4.png)</kbd>
 
 
-2. AMA will open the **Visualization** tab. Click on the button to close the minimap. 
+3. AMA will open the **Visualization** tab. Click on the button under the mini map to close the minimap. 
 
 	<kbd>![AMA_Visualization](./images/media/AMA_Visualization.png)</kbd>
 
 
 
-3. As you can see, AMA has discovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
+4. As you can see, AMA has discovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
 
 	<kbd>![](./images/media/AMA_Visualization2.png)</kbd>
 
 	Click on the **Assessment** tab.
 
-4. You can see the assessment for the different target applications. Select as target Liberty administered from WebSphere (MoRE) and you can see, that the application can be migrated to MoRE but has some issues that must be fixed.
+5. AMA displays an assessment overview for different migration targets. Select as target **Liberty administered from WebSphere (MoRE)**. You can see that the application WhereAmI is classified as **Moderate** which means that some code changes are required to run it on MoRE.
 
 	<kbd>![AMA_Assessment](./images/media/AMA_Assessment.png)</kbd>
 
-	Click on the WhereAmI application to get more insight about the issues
+	Click on the **WhereAmI** application to get more insight about the issues
 
 
-5. As you can see, Click on the WhereAmI application to get more insight about the issues
-
+6. In the top of the page, you can see an overview 
 	<kbd>![](./images/media/AMA_WhereAmI_Assessment1.png)</kbd>
+
+7. Scroll down to the section **Complexity score** and open the two twisties. As you can see, there are three issues that require a code change. Two of them have an automated fix.
 
 	<kbd>![](./images/media/AMA_WhereAmI_Assessment2.png)</kbd>
 
+
+8. Scroll further down to the section **Issues**. In the section **Unique Code Issues**, open the twisty next to **Technology issues** to see again the three issues. Open the twisty next to each issue to see more details about the issue.
+
 	<kbd>![](./images/media/AMA_WhereAmI_Assessment3.png)</kbd>
 
-5. Generate and download the **migration plan** so that you can re-use it in AMA Dev Tools
 
-	<kbd>![](./images/media/AMA_WhereAmI_Migrationplan.png)</kbd>
+9. Click on the button **View migratin plan** at the top of the page.
 
+	<kbd>![AMA_ViewMigrationPlan](./images/media/AMA_ViewMigrationPlan.png)</kbd>
+	The migration plan will be generated and displayed.
 
-## Demo how to use the AMA Dev Tools to apply automated fixes
+10. The migration plan provides assets to deploy the application. The Liberty configuration file **server.xml** is provided to deploy the application to in development to a Liberty instance. 
 
-1. In a terminal window, switch to the WhereAmI directory and open VS Code
+	<kbd>![AMA_MigrationPlan_server_xml_1](./images/media/AMA_MigrationPlan_server_xml_1.png)</kbd>
+
+	Feel free to click on **server.xml** to see the Liberty configuration.
+	Finally click on **Download** to download the migration plan.
+
+11. The migration plan will be downloaded and stored in the **Downloads** folder.
+
+	<kbd>![AMA_Download_MigrationPlan](./images/media/AMA_Download_MigrationPlan.png)</kbd>
+
+</details>
+
+### Use the AMA Dev Tools to apply automated fixes
+<details open>
+<Summary> Use the Application Modernization Accelerator Development tools to apply automated fixes. </Summary>
+
+The AMA Dev Tools is an extension for IDEs. You will use Visual Studio Code and the extension to modify the code to make it work on MoRE.
+
+1. In a terminal window, switch to the **WhereAmI** directory and open VS Code
 
 		cd WhereAmI_JavaEE_Project/WhereAmI
 		code .
@@ -532,6 +553,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 	<kbd>![](./images/media/AMADevTool_ModernizationWizard5.png)</kbd>
 
+</details>
 
 
 ## Set up the managed Liberty cluster
