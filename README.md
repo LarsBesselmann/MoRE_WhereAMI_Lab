@@ -366,7 +366,6 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 <details open>
 <Summary> Run the Application Modernization Accelerator data collector </Summary>
 
-
 ### Run the AMA data collector to scan the environment 
 
 1. Start AMA
@@ -437,7 +436,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 </details>
 
 <details open>
-<Summary> Use the Application Modernization Accelerator to analyize the application </Summary>
+<Summary> Use the Application Modernization Accelerator to analyze the application </Summary>
 
 ### Use AMA to identify what needs to be changed to modernize the application for MoRE
 
@@ -446,9 +445,27 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 	<kbd>![AMA_MoRE_workspace](./images/media/AMA_MoRE_workspace.png)</kbd>
 
 
+2. The data collection should have been uploaded automatically. If you instead are asked to upload information about your estate, click on **Upload results**.  
+
+	<kbd>![AMA_Upload_Results](./images/media/AMA_Upload_Results.png)</kbd>
+
+	Then click on **Drag and drop files here or click to upload**,  
+
+	<kbd>![AMA_Upload_Data2](./images/media/AMA_Upload_Data2.png)</kbd>
+
+	Select the file **/home/techzone/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Collection/Dmgr01.zip** and click on **Open**
+
+	<kbd>![AMA_Upload_Data3](./images/media/AMA_Upload_Data3.png)</kbd>
+
+	Finally click on **Upload**
+
+	<kbd>![AMA_Upload_Data4](./images/media/AMA_Upload_Data4.png)</kbd>
+
+
 2. AMA will open the **Visualization** tab. Click on the button to close the minimap. 
 
-	<kbd>![](./images/media/AMA_Visualization.png)</kbd>
+	<kbd>![AMA_Visualization](./images/media/AMA_Visualization.png)</kbd>
+
 
 
 3. As you can see, AMA has discovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
