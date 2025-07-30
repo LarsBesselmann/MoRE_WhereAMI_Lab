@@ -420,22 +420,41 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 			cd ~/Downloads
 			transformationadvisor-4.3.0/bin/transformationadvisor -w /home/techzone/IBM/WebSphere/AppServer/
-		Accept the license agreement when asked to do so.
+		
+	3. Enter **1** to **Accept the license agreement** when asked to do so.
 
-	3. Wait until the collection has been uploaded and is available in AMA
+		<kbd>![AMA_Collector_AcceptLicense](./images/media/AMA_Collector_AcceptLicense.png)</kbd>
+		
+
+	4. Wait until the collection has been uploaded and is available in AMA.
+
+		<kbd>![AMA_Collector_uploaded](./images/media/AMA_Collector_uploaded.png)</kbd>
+		
+6. Switch back to the browser and open the **MoRE_Demo** workspace.
+
+	<kbd>![AMA_MoRE_workspace](./images/media/AMA_MoRE_workspace.png)</kbd>
 
 
-6. Show in the **Visualization** tab that there are no dependencies to other applications
+7. AMA will open the **Visualization** tab. Click on the button to close the minimap. 
 
 	<kbd>![](./images/media/AMA_Visualization.png)</kbd>
 
-6. Switch to the **Assessment** tab that the application can be migrated to MoRE but has some issues that must be fixed.
 
-	<kbd>![](./images/media/AMA_Assessment.png)</kbd>
+8. As you can see, AMA has dsicovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
+
+	<kbd>![](./images/media/AMA_Visualization2.png)</kbd>
+
+	Click on the **Assessment** tab.
+
+9. You can see the assessment for the different target applications. Select as target Liberty administered from WebSphere (MoRE) and you can see, that the application can be migrated to MoRE but has some issues that must be fixed.
+
+	<kbd>![AMA_Assessment](./images/media/AMA_Assessment.png)</kbd>
 
 7. Switch back to the **Visualization** tab.
 
 </details>
+
+The preparation is now finished
 
 
 ## Demo the end-to-end flow
