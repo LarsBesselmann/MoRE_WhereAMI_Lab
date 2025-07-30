@@ -363,10 +363,12 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 </details>
 
+## Assess the application for target MoRE
+
 <details open>
 <Summary> Run the Application Modernization Accelerator data collector </Summary>
 
-## Run the AMA data collector to scan the environment 
+### Run the AMA data collector to scan the environment 
 
 1. Start AMA
 
