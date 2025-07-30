@@ -228,6 +228,10 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ### Prepare and build the maven project
 
+<details open>
+<Summary> How to build the application> <Summary >
+
+
 1.  **Close** all **Terminal** windows and **Browser** Tabs used in any previous lab.
 
 2.  Use the **Activities** Icon to switch to the toolbar, then click the **Terminal** icon to open a Terminal window.
@@ -341,11 +345,15 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 		/home/techzone/IBM/HTTPServer/bin/apachectl start
 
-9. Access the application via IHS: http://localhost:8080/tWAS/WhereAmI
+9. Access the application via browser on the IBM HTTP Server URL: http://localhost:8080/tWAS/WhereAmI.  
 
 	<kbd>![](./images/media/WhereAmI_tWAS1.png)</kbd>
 
-10. Reload the page and you should see that the application switches between the two tWAS servers.
+10. Reload the page 
+
+	<kbd>![](./images/media/WhereAmI_tWAS1_reload.png)</kbd>
+
+	You should see that the application switches to the second tWAS servers.
 
 	<kbd>![](./images/media/WhereAmI_tWAS2.png)</kbd>
 
