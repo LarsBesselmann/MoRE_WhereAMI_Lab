@@ -403,6 +403,11 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 		After some seconds, you will see a notification that the discovery tool has been downloaded.
 
 		<kbd>![AMA_Downloaded_DiscoveryTool](./images/media/AMA_Downloaded_DiscoveryTool.png)</kbd>
+
+	3. Click on the **back** button to return to the AMA Discovery Tool page
+
+		<kbd>![AMA_Downloaded_DiscoveryTool_back](./images/media/AMA_Downloaded_DiscoveryTool_back.png)</kbd>
+		
 	
 5. Run the data collector to create a data collection and upload it.
 	
