@@ -228,27 +228,34 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ### Prepare and build the maven project
 
-1. Create a working directory and download the project
+1.  **Close** all **Terminal** windows and **Browser** Tabs used in any previous lab.
+
+2.  Use the **Activities** Icon to switch to the toolbar, then click the **Terminal** icon to open a Terminal window.
+
+    <kbd>![Toolbar_Terminal](./images/media/tz_Toolbar_Terminal.png)</kbd>
+
+
+3. Create a working directory and download the project
 
 		mkdir -p ~/Student/labs
 		git clone https://github.com/LarsBesselmann/MoRE_WhereAMI.git ~/Student/labs
 
-2. Switch to the directory WhereAmI_MoRE_Demo_assets and uzip the initial project
+4. Switch to the directory WhereAmI_MoRE_Demo_assets and uzip the initial project
 
 		cd ~/Student/labs/WhereAmI_MoRE_Demo_assets
 		unzip WhereAmI-2.0.0-Project.zip
 
-3. Switch to the WhereAmI directory 
+5. Switch to the WhereAmI directory 
 
 		cd WhereAmI
 
-4. As the WhereAmI project depends on was_public.jar, you must make it visible to maven to avoid build failures. Run the following command 
+6. As the WhereAmI project depends on was_public.jar, you must make it visible to maven to avoid build failures. Run the following command 
 
    	    mvn install:install-file -Dfile=./was_dependency/was_public.jar -DpomFile=./was_dependency/was_public-9.0.0.pom
 
     You should see a success message.
 
-5. Build the application with maven
+7. Build the application with maven
 
 		mvn clean
 		mvn package
