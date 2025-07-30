@@ -271,11 +271,14 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.sh
 		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/startNode.sh
 
-2. Create a tWAS cluster called tWASCluster1 and two members (tWASMember1, tWASMember2), one on each node.
+	Wait until the Deployment Manager und the Node Agents have been started successfully.
+
+
+2. Use wsadmin to create a tWAS cluster called tWASCluster1 and two members (tWASMember1, tWASMember2), one on each node.
 
 		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_create.py 
 
-3. Install the generated application war to the tWAS cluster. During installation, adjust the context root to **/tWAS**.
+3. Use wsadmimn to install the generated application war to the tWAS cluster. During installation, adjust the context root to **/tWAS**.
 
 
 		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_WhereAmI_install.py 
