@@ -139,7 +139,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
     > Note: That is a numeric zero in IBMDem0s!  
 
-      <kbd>![](./images/media/vnc-password.png)</kbd>
+      <kbd>![](./images/media/tz_vnc-password.png)</kbd>
 
 	 
 	 <br>
@@ -156,7 +156,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 	 <br>
  
-     <kbd>![student vm screen](./images/media/techzone-user-pw.png)</kbd>
+     <kbd>![student vm screen](./images/media/tz_techzone-user-pw.png)</kbd>
 	 
 	 <br>
 	
@@ -208,11 +208,11 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 
 4. Click on the **Activities** icon within the VM to switch between different windows or get access the tool bar.
-    <kbd>![Activities](./images/media/Activies.png)</kbd>
+    <kbd>![Activities](./images/media/tz_Activies.png)</kbd>
 
     You will see the toolbar.
 
-    <kbd>![Toolbar_Terminal](./images/media/Toolbar.png)</kbd>
+    <kbd>![Toolbar_Terminal](./images/media/tz_Toolbar.png)</kbd>
     
     <br>
 
