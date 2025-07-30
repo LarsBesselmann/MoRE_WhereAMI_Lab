@@ -325,7 +325,15 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 7. Verify that the application has been started.
 
+	1. Navigate to **Applications > Application Types > WebSphere enterprise applications**. The WhereAmI-2.0.0.war application should be running.
+
 	<kbd>![](./images/media/WhereAmI_tWAS_started.png)</kbd>
+
+	Click on the application **WhereAmI-2.0.0.war**, then click on **Manmage Modules**.
+
+	<kbd>![](./images/media/WhereAmI_tWAS_mapping.png)</kbd>
+
+	Verify that the application is mapped to webserver1 and tWASCluster1.
 
 	<kbd>![](./images/media/WhereAmI_tWAS_deployed.png)</kbd>
 
