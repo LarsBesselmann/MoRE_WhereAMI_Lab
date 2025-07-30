@@ -367,7 +367,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 <Summary> Prepare Application Modernization Accelerator> </Summary>
 
 
-### Use AMA to scan the environment 
+### Run the AMA data collector to scan the environment 
 
 1. Start AMA
 
@@ -376,17 +376,37 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 	Wait until AMA has started successfully and the URL is displayed.
 
-	<kbd>![](./images/media/AMA_Started.png)</kbd>
+	<kbd>![AMA_Started](./images/media/AMA_Started.png)</kbd>
 
 2. Open a browser and access AMA via the URL https://rhel9-base.gym.lan:3001
 
-3. In AMA, create a workspace named **MoRE_Demo**
+3. In AMA, click on **Create workspace** and enter as name **MoRE_Demo**, then click on **Create**.
 
-4. Run the data collector to create a data collection and upload it
+	<kbd>![AMA_createWorkspace](./images/media/AMA_create_Workspace.png)</kbd>
 
-	1. Download the data collector
 
-	2. Extract the data collector
+4. Download the data collector
+
+	1. Click on **Open discovery tool**
+
+		<kbd>![AMA_open_DiscoveryTool](./images/media/AMA_Open_DiscoveryTool.png)</kbd>
+	
+	
+	2. Click on **Download discovery tool** to download the data collector
+
+		<kbd>![AMA_download_DiscoveryTool](./images/media/AMA_Download_DiscoveryTool.png)</kbd>
+
+		If a security warning is displayed, click on **Advanced**, then click on **Accept the Risk and Continue**. 
+
+		<kbd>![Firefox_Security_Risk_2](./images/media/tz_Browser_SecurityRisk_2.png)</kbd>
+	
+		After some seconds, you will see a notification that the discovery tool has been downloaded.
+
+		<kbd>![AMA_Downloaded_DiscoveryTool](./images/media/AMA_Downloaded_DiscoveryTool.png)</kbd>
+	
+5. Run the data collector to create a data collection and upload it.
+	
+	1. Extract the data collector
 
 			cd ~/Downloads
 			tar -zxvf DiscoveryTool-Linux_MoRE_Demo.tgz
@@ -400,7 +420,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 	3. Wait until the collection has been uploaded and is available in AMA
 
 
-5. Show in the **Visualization** tab that there are no dependencies to other applications
+6. Show in the **Visualization** tab that there are no dependencies to other applications
 
 	<kbd>![](./images/media/AMA_Visualization.png)</kbd>
 
