@@ -924,7 +924,7 @@ You should have seen how easy it can be to migrate an application from tradition
 		rm -rf ~/Downloads/DiscoveryTool-Linux_MoRE_Demo
 		rm -rf ~/Downloads/WhereAmI-2_0_0_war.ear_migrationPlan.zip
 		rm -rf ~/Downloads/Dmgr01*
-		rm -rf transformationadvisor-4.3.0*
+		rm -rf ~/Downloads/transformationadvisor-4.3.0*
 		rm -rf ~/Downloads/uploadEndpoint*
 		rm -rf ~/Downloads/environment.json
 		rm -rf ~/Downloads/scan_results.json
