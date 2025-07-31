@@ -367,14 +367,14 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ### Run the AMA data collector to scan the environment 
 <details open>
-<Summary> Run the Application Modernization Accelerator data collector to scan the WebSphere environment The generated data collection will be uploaded automatically.</Summary>
+<Summary> Run the Application Modernization Accelerator data collector to scan the WebSphere environment. The generated data collection will be uploaded automatically.</Summary>
 
 1. Start AMA
 
 		cd ~/application-modernization-accelerator-local-4.3.0/
 		scripts/startLocal.sh 
 
-	Wait until AMA has started successfully and the URL is displayed.
+	Wait until AMA has started successfully, and the URL is displayed.
 
 	<kbd>![AMA_Started](./images/media/AMA_Started.png)</kbd>
 
@@ -446,7 +446,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 	<kbd>![AMA_MoRE_workspace](./images/media/AMA_MoRE_workspace.png)</kbd>
 
 
-2. The data collection should have been uploaded automatically. If you instead are asked to upload information about your estate, click on **Upload results**.  
+2. The data collection should have been uploaded automatically. If you are asked to upload information about your estate, this indicates that the upload was not successful. In that case, click on **Upload results**.  
 
 	<kbd>![AMA_Upload_Results](./images/media/AMA_Upload_Results.png)</kbd>
 
@@ -469,7 +469,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 
 
-4. As you can see, AMA has discovered two aplications. The WhereAmI application has no dependencies to other applications, databases or queues.
+4. As you can see, AMA has discovered two applications. The WhereAmI application has no dependencies to other applications, databases or queues.
 
 	<kbd>![](./images/media/AMA_Visualization2.png)</kbd>
 
