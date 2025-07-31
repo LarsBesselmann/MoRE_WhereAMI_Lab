@@ -902,8 +902,10 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 **--- This concludes the MoRE part of the lab. ---**
 
 
+**--- Congratulations. You have completed the AMA and MoRE lab. ---**
 
 You should have seen how easy it can be to migrate an application from traditional WAS to managed Liberty and that you could use the same operational model in managed Liberty.
+
 
 
 ## Cleanup
