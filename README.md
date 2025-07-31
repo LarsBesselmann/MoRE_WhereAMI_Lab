@@ -1008,8 +1008,10 @@ Then perform the following steps:
 
 <details open>
 <summary>
-Here you can find details how to do a demo without having to run through the whole lab.
+Here you can find details how to skip a lab or do a demo without having to run through the whole lab.
 </summary>
+
+The fast pass section is mainly targeted for attendees that already worked with the tools. Therefore it does not provide screenshots or detailed steps how to perform a task. 
 
 ### Mandatory steps for all scenarios
 
