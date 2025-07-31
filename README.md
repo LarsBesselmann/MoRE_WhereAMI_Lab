@@ -907,6 +907,82 @@ You should have seen how easy it can be to migrate an application from tradition
 
 # Appendix
 
+# Cleanup
+<details open>
+<summary>
+Steps to clean up the environment.
+</summary>
+## Cleanup
+
+First of all, close all terminal windows.
+Then perform the following steps:
+
+### Clean up AMA
+
+1. In AMA, delete the AMA workspace **MoRE_Demo**
+
+2. Stop AMA
+
+		cd ~/application-modernization-accelerator-local-4.3.0/
+		scripts/stopLocal.sh 
+		
+3. Remove the data collector and other AMA generated files
+
+		rm -rf ~/Downloads/DiscoveryTool-Linux_MoRE_Demo.tgz
+		rm -rf ~/Downloads/DiscoveryTool-Linux_MoRE_Demo
+		rm -rf ~/Downloads/Dmgr01*
+		rm -rf ~/Downloads/transformationadvisor-4.3.0*
+		rm -rf ~/Downloads/uploadEndpoint*
+		rm -rf ~/Downloads/environment.json
+		rm -rf ~/Downloads/scan_results.json
+		rm -rf ~/Downloads/logs
+		rm -rf ~/Downloads/output.zip
+
+		rm -rf ~/Downloads/WhereAmI-2_0_0_war.ear_migrationPlan.zip
+		
+
+### Cleanup WebSphere
+
+1. Uninstall the WhereAmI application 2.0.0
+
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_WhereAmI_uninstall.py 
+
+2. Delete the tWAS cluster called tWASCluster1 and the two members (tWASMember1, tWASMember2).
+
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_delete.py 
+
+3. Uninstall the WhereAmI application 2.0.1
+
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/LibertyCluster_WhereAmI_uninstall.py 
+
+4. Delete the Liberty cluster called managedLibertyCluster1
+
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/LibertyCluster_delete.py 
+
+
+5. Stop the IBM HTTP Server via command
+
+		/home/techzone/IBM/HTTPServer/bin/apachectl stop
+
+
+6. Stop the Dmgr and the two Node agents
+
+		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/stopNode.sh -user techzone -password IBMDem0s! 
+		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh -user techzone -password IBMDem0s! 
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh -user techzone -password IBMDem0s! 
+
+### Remove the lab assests
+1. Close VS Code
+
+2. Remove the project directory
+
+		cd ~
+		rm -rf ~/Student/labs
+
+</details>
+
+
+
 ## Fast Path to do demos - general steps
 
 <details open>
@@ -990,77 +1066,4 @@ For the **MoRE scenario**, there are some steps required in addition to the mand
 Do the MoRE setup and application deployment as described in the section **Set up the managed Liberty cluster and deploy the modernized WhereAmI application**. 
 
 </details>
-
-# Cleanup
-<details open>
-<summary>
-Steps to clean up the environment.
-</summary>
-## Cleanup
-
-### Clean up AMA
-
-1. In AMA, delete the AMA workspace **MoRE_Demo**
-
-2. Stop AMA
-
-		cd ~/application-modernization-accelerator-local-4.3.0/
-		scripts/stopLocal.sh 
-		
-3. Remove the data collector and other AMA generated files
-
-		rm -rf ~/Downloads/DiscoveryTool-Linux_MoRE_Demo.tgz
-		rm -rf ~/Downloads/DiscoveryTool-Linux_MoRE_Demo
-		rm -rf ~/Downloads/Dmgr01*
-		rm -rf ~/Downloads/transformationadvisor-4.3.0*
-		rm -rf ~/Downloads/uploadEndpoint*
-		rm -rf ~/Downloads/environment.json
-		rm -rf ~/Downloads/scan_results.json
-		rm -rf ~/Downloads/logs
-		rm -rf ~/Downloads/output.zip
-
-		rm -rf ~/Downloads/WhereAmI-2_0_0_war.ear_migrationPlan.zip
-		
-
-### Cleanup WebSphere
-
-1. Uninstall the WhereAmI application 2.0.0
-
-		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_WhereAmI_uninstall.py 
-
-2. Delete the tWAS cluster called tWASCluster1 and the two members (tWASMember1, tWASMember2).
-
-		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_delete.py 
-
-3. Uninstall the WhereAmI application 2.0.1
-
-		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/LibertyCluster_WhereAmI_uninstall.py 
-
-4. Delete the Liberty cluster called managedLibertyCluster1
-
-		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/LibertyCluster_delete.py 
-
-
-5. Stop the IBM HTTP Server via command
-
-		/home/techzone/IBM/HTTPServer/bin/apachectl stop
-
-
-6. Stop the Dmgr and the two Node agents
-
-		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/stopNode.sh -user techzone -password IBMDem0s! 
-		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh -user techzone -password IBMDem0s! 
-		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh -user techzone -password IBMDem0s! 
-
-### Remove the lab assests
-1. Close VS Code
-
-2. Remove the project directory
-
-		cd ~
-		rm -rf ~/Student/labs
-
-</details>
-
-
 
