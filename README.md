@@ -18,7 +18,7 @@ The lab consists of four parts:
 	- Create a managed Liberty cluster
 	- Deploy the modernized application
 
-You will need an estimated **60 to 90 minutes** to complete all parts of the lab. But there is also a fast pass to skip a part.
+You will need an estimated **60 to 90 minutes** to complete all parts of the lab. But there is also a shortcut to skip a part.
 
 At the end of this lab, you should be able to:
 
@@ -35,7 +35,7 @@ Nevertheless you can skip the one or other part of the lab.
 - You can start with part 3 (AMA Dev Tools) and skip the AMA assessment
 - You can start with part 4 (MoRE) and skip the assessment and code updates
 
-If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Fast Pass - How to](#shortcut---how-to-skip-parts-of-the-lab)
+If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Shortcut - How to](#shortcut---how-to-skip-parts-of-the-lab)
 
 
 
