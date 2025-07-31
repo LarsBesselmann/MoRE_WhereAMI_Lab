@@ -4,6 +4,7 @@
 
 In this exercise, you will learn how developers can use the **IBM Application Modernization Accelerator (AMA)** and the **IBM Application Modernization Accelerator Developer Tools (AMA Dev Tools)** to modernize an existing Java Enterprise Application for the target runtime **IBM Modernized Runtime Extension for Java (MoRE)**. 
 
+
 The lab consists of four parts:
 
 - Part 1: Use the **IBM Application Modernization Accelerator (AMA)** data collector 
