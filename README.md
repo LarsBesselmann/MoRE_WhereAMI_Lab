@@ -1024,11 +1024,13 @@ For the **AMA Analyze scenario**, there are some steps required in addition to t
 Now you can do the analysis via AMA as documented in the section **Use AMA to identify required code changes for target MoRE**.
 
 
+
+
 ### Additional steps for AMA Dev Tools scenario (using the prepackaged migration plan)
 
 For the **AMA Dev Tools scenario**, there are no additional steps required in addition to the mandatory steps mentioned before.
 
-Do the modernization via AMA Dev Tools as described in the section **MoRE_Demo**. 
+Do the modernization via AMA Dev Tools as described in the section **Use the AMA Dev Tools to apply automated fixes**. 
 Use the migration plan **~/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Migrationplan/WhereAmI-2_0_0_war.ear_migrationPlan.zip**
 
 
