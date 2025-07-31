@@ -603,11 +603,37 @@ Click on **Proceed** to continue.
 **--- This concludes the AMA part of the lab. ---**
 
 
+## Set up the managed Liberty cluster and deploy the modernized WhereAmI application
+
+### Set up the managed Liberty cluster
+<details open>
+<Summary> Use the WebSphere Administration Console to create a managed Liberty  cluster. </Summary>
+
+You can create a **managed Liberty cluster** via the WebSphere Administration console or via wsadmin. In the lab, you will use the Administration Console to create the cluster. The WebSphere command assistance will providfe the related wsadmin commands.
 
 
-## Set up the managed Liberty cluster
+1. Access via browser the WebSphere Admin Console via URL: https://localhost:9043/ibm/console.
 
-1. Create a managed Liberty cluster named managedLibertyCluster1
+	If a security warning is displayed, click on **Advanced**, then click on **Accept the Risk and Continue**. 
+
+	<kbd>![Firefox_Security_Risk](./images/media/tz_Browser_SecurityRisk_1.png)</kbd>
+
+2. On the **WAS Login panel**, enter User ID: techzone, password: **IBMDem0s!**
+
+	<kbd>![WAS_Login_Panel](./images/media/WAS_Login_Panel.png)</kbd>
+
+
+3. Verify that command assistance has been enabled
+
+	1. Navigate to **System administration > Console preferences**
+	2. Make sure that the following options are selected:
+
+			Enable command assistance notifications
+			Log command assistance commands
+
+		<kbd>![WAS_Login_Panel](./images/media/WAS_Enable_CommandAssistance.png)</kbd>
+
+4. Create a managed Liberty cluster named managedLibertyCluster1
 
 	<kbd>![](./images/media/MoRE_createCluster1.png)</kbd>
 
