@@ -907,7 +907,7 @@ You should have seen how easy it can be to migrate an application from tradition
 
 # Appendix
 
-# Cleanup
+## Cleanup
 <details open>
 <summary>
 Steps to clean up the environment.
