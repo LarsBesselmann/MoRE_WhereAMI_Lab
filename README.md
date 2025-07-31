@@ -658,35 +658,53 @@ For the lab we only use the web server and the servers from tWASCluster1.
 
 	4. Create the second cluster member called **LibertyClusterMember2** on the node **rhel9-baseNode02**. Then click **Add Member**
 
-	<kbd>![](./images/media/MoRE_createCluster4.png)</kbd>
+		<kbd>![](./images/media/MoRE_createCluster4.png)</kbd>
 
-	<kbd>![](./images/media/MoRE_createCluster5.png)</kbd>
+	5. Verify that the two cluster members have beed added to the cluster.
+	Then click **Next**.
 
-4. Review the summary to make sure the servers are placed correctly
+		<kbd>![](./images/media/MoRE_createCluster5.png)</kbd>
 
-	<kbd>![](./images/media/MoRE_createCluster6.png)</kbd>
+	6. Review the summary to make sure the servers are placed correctly and that the correct server template has been used. Then click **Finish**
 
-
-5. Before saving the cluster, take a look at the wsadmin script.
-
-	<kbd>![](./images/media/MoRE_createCluster8.png)</kbd>
-
-6. Save the settings
-
-	<kbd>![](./images/media/MoRE_createCluster7.png)</kbd>
-
-7. CLick on the cluster name
-
-	<kbd>![](./images/media/MoRE_reviewCluster1.png)</kbd>
+		<kbd>![](./images/media/MoRE_createCluster6.png)</kbd>
 
 
-8. Review the configuration
+	7. Before saving the cluster, take a look at the related wsadmin commands.
+	Click on the link below **Command Assistance** to open the Command Assistance.
 
-	<kbd>![](./images/media/MoRE_reviewCluster2.png)</kbd>
+		<kbd>![](./images/media/MoRE_createCluster7.png)</kbd>
 
-9. Take a look at the local topology.
+	8. Take a look at the listed commands like **createCluster** and **createClusterMember**. You could use these commands to automate the cluster creation. Finally close the window by clicking on **x**.
 
-	<kbd>![](./images/media/MoRE_reviewCluster3.png)</kbd>
+		<kbd>![](./images/media/MoRE_createCluster8.png)</kbd>
+
+	9. Save the configuration changes.
+
+		<kbd>![](./images/media/MoRE_createCluster9.png)</kbd>
+
+	10. Wait until the synchronization has completed, then click on **OK**
+	
+		<kbd>![](./images/media/MoRE_createCluster10.png)</kbd>
+
+7. Review the configuration
+
+	1. CLick on the cluster name **managedLibertyCluster1** to open the configuration.
+
+		<kbd>![](./images/media/MoRE_reviewCluster1.png)</kbd>
+
+
+	2. On the **Configuration** tab, expand the section **CLuster members**.
+
+		<kbd>![](./images/media/MoRE_reviewCluster2.png)</kbd>
+
+	3. Click on **Local Topology** to take a look at the local topology.
+
+		<kbd>![](./images/media/MoRE_reviewCluster3.png)</kbd>
+
+	4. Expand the server cluster **managedLibertyCluster1** to see both servers.
+
+		<kbd>![](./images/media/MoRE_reviewCluster4.png)</kbd>
 
 
 10. Review the ports and add missing HTTP ports to the virtual hosts
