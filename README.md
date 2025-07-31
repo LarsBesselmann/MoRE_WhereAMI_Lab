@@ -609,7 +609,7 @@ Click on **Proceed** to continue.
 <details open>
 <Summary> Use the WebSphere Administration Console to create a managed Liberty cluster. </Summary>
 
-You can create a **managed Liberty cluster** via the WebSphere Administration console or via wsadmin. In the lab, you will use the Administration Console to create the cluster. The WebSphere command assistance will providfe the related wsadmin commands.
+You can create a **managed Liberty cluster** via the WebSphere Administration console or via wsadmin. In the lab, you will use the Administration Console to create the cluster. The WebSphere command assistance will provide the related wsadmin commands.
 
 
 1. Access via browser the WebSphere Admin Console via URL: https://localhost:9043/ibm/console.
@@ -633,8 +633,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 		<kbd>![WAS_Login_Panel](./images/media/WAS_Enable_CommandAssistance.png)</kbd>
 
-4. Navigate to **Servers > All Servers** to see the servers defined in the WebSphere cell. As you can see, there are several servers defined.
-For the lab we only use the web server and the servers from tWASCluster1.
+4. Navigate to **Servers > All Servers** to see the servers defined in the WebSphere cell. From those servers, only the web server and the servers from tWASCluster1 are used in the lab.
 
 	<kbd>![WAS_AllServers](./images/media/WAS_AllServers.png)</kbd>
 
@@ -660,7 +659,7 @@ For the lab we only use the web server and the servers from tWASCluster1.
 
 		<kbd>![](./images/media/MoRE_createCluster4.png)</kbd>
 
-	5. Verify that the two cluster members have beed added to the cluster.
+	5. Verify that the two cluster members have been added to the cluster.
 	Then click **Next**.
 
 		<kbd>![](./images/media/MoRE_createCluster5.png)</kbd>
