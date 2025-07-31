@@ -652,11 +652,11 @@ For the lab we only use the web server and the servers from tWASCluster1.
 
 		<kbd>![](./images/media/MoRE_createCluster2.png)</kbd>
 
-	3. Create the first cluster member called **LibertyClusterMember1** on the node **rhel9-baseNode01** and select as basis to use the server template **default-managed-liberty-server**.
+	3. Create the first cluster member called **LibertyClusterMember1** on the node **rhel9-baseNode01** and select as basis to use the server template **default-managed-liberty-server**. Then click **Next**
 	
 		<kbd>![](./images/media/MoRE_createCluster3.png)</kbd>
 
-3. Add another cluster member, this time on the sevcond node.
+	4. Create the second cluster member called **LibertyClusterMember2** on the node **rhel9-baseNode02**. Then click **Add Member**
 
 	<kbd>![](./images/media/MoRE_createCluster4.png)</kbd>
 
