@@ -226,7 +226,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 ## Preparation:
 
 <details open>
-<Summary> Download and build the application> </Summary>
+<Summary> Download and build the application </Summary>
 
 ### Prepare and build the maven project
 
@@ -607,7 +607,7 @@ Click on **Proceed** to continue.
 
 ### Set up the managed Liberty cluster
 <details open>
-<Summary> Use the WebSphere Administration Console to create a managed Liberty  cluster. </Summary>
+<Summary> Use the WebSphere Administration Console to create a managed Liberty cluster. </Summary>
 
 You can create a **managed Liberty cluster** via the WebSphere Administration console or via wsadmin. In the lab, you will use the Administration Console to create the cluster. The WebSphere command assistance will providfe the related wsadmin commands.
 
@@ -707,16 +707,79 @@ For the lab we only use the web server and the servers from tWASCluster1.
 		<kbd>![](./images/media/MoRE_reviewCluster4.png)</kbd>
 
 
-10. Review the ports and add missing HTTP ports to the virtual hosts
+8. Review the ports and add missing HTTP ports to the virtual hosts
 
-	<kbd>![](./images/media/MoRE_ports1.png)</kbd>
+	1. Navigate to **Servers > All servers**, then open the server setting for server **LibertyClusterMember1** by clicking on the server name.
+	
+		<kbd>![MoRE_LibertyClusterMember1.png](./images/media/MoRE_LibertyClusterMember1.png)</kbd>
+	
+	2. Expand the **Ports** section and find the port for WC_defaulthost.
+		In the lab environment, the port should be 9084.
 
-	<kbd>![](./images/media/MoRE_ports2.png)</kbd>
+		<kbd>![](./images/media/MoRE_ports1.png)</kbd>
 
-	<kbd>![](./images/media/MoRE_ports3.png)</kbd>
+	3. Navigate to **Servers > All servers**, then open the server setting for server **LibertyClusterMember2** by clicking on the server name.
+	
+		<kbd>![MoRE_LibertyClusterMember2.png](./images/media/MoRE_LibertyClusterMember2.png)</kbd>
+	
+	4. Expand the **Ports** section and find the port for WC_defaulthost.
+		In the lab environment, the port should be 9085.
+
+		<kbd>![](./images/media/MoRE_ports2.png)</kbd>
+
+	5. Navigate to **Environments > Virtual hosts**, then click on **default_host**
+
+		<kbd>![](./images/media/MoRE_ports3.png)</kbd>
+
+	6. Click on **Host Aliases**
+	
+		<kbd>![](./images/media/MoRE_ports4.png)</kbd>
+
+	7. By sorting the ports in decending order, you can see that the ports 9084 and 9085 have not been defined yet.
+	
+		<kbd>![](./images/media/MoRE_ports5.png)</kbd>
+
+		Click on **New** to define the first port.
+
+	8. Enter the port **9084** and click **OK**
+
+		<kbd>![](./images/media/MoRE_ports6.png)</kbd>
+
+	
+	9. Click on **New** to define another port.
+
+		<kbd>![](./images/media/MoRE_ports7.png)</kbd>
 
 
-## Deploy the application
+	9. Enter the port **9085** and click **OK**
+
+		<kbd>![](./images/media/MoRE_ports8.png)</kbd>
+
+	10. Click on **Save** to save the changes.
+
+		<kbd>![](./images/media/MoRE_ports9.png)</kbd>
+
+	11. Wait untill the synchronization has completed, then click on **OK**.
+
+		<kbd>![](./images/media/MoRE_ports10.png)</kbd>
+
+	12. Verify that the two ports have been added.
+
+		<kbd>![](./images/media/MoRE_ports11.png)</kbd>
+
+<br>
+
+**--- This concludes the setup of the MoRE cluster. ---**
+
+</details>
+
+
+## Deploy the application to a managed Liberty cluster
+
+<details open>
+<Summary> Use the WebSphere Administration Console to deploy the WhereAmI appllication to a managed Liberty cluster. </Summary>
+
+
 
 1. Select the updated WhereAmI application (which has the version 2.0.1) and select Liberty as target runtime
 
