@@ -28,7 +28,9 @@ At the end of this lab, you should be able to:
   
 
 ## Fast-Pass: 
-You can skip the one or other part of the lab. 
+To get a good overiew about the capabilities provided by the IBM solutions, it is recommended to do all parts in sequence. 
+
+Nevertheless you can skip the one or other part of the lab. 
 - You can start with part 2 (AMA Assessment) and skip the AMA datacollection
 - You can start with part 3 (AMA Dev Tools) and skip the AMA assessment
 - You can start with part 4 (MoRE) and skip the assessment and code updates
