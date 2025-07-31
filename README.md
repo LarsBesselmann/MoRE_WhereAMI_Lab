@@ -365,7 +365,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ## Assess and update the application for target MoRE
 
-### Run the AMA data collector to scan the environment 
+### Run the AMA data collector to scan the environment {###AMA_datacollector}
 <details open>
 <Summary> Run the Application Modernization Accelerator data collector to scan the WebSphere environment. The generated data collection will be uploaded automatically.</Summary>
 
@@ -1023,6 +1023,7 @@ For the **AMA Analyze scenario**, there are some steps required in addition to t
 
 Now you can do the analysis via AMA as documented in the section **Use AMA to identify required code changes for target MoRE**.
 
+[Link to section] (###AMA_datacollector)
 
 
 
