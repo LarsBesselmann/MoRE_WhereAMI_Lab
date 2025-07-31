@@ -881,13 +881,19 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 	<kbd>![](./images/media/MoRE_runApplication5.png)</kbd>
 
 
-6. Access the application via IBM HTTP Server at the URL **http://localhost:8080/liberty/WhereAmI
+6. Open a browser and access the application via IBM HTTP Server at the URL **http://localhost:8080/liberty/WhereAmI**. The application will display which Liberty server currently serves the request. 
 
-	<kbd>![](./images/media/MoRE_runApplication3.png)</kbd>
+	<kbd>![](./images/media/MoRE_runApplication6.png)</kbd>
 
-4. Reload the page and you should see that it switches been both Liberty instances.
+7. Reload the page by clicking on the **reload** button.
 
-	<kbd>![](./images/media/MoRE_runApplication4.png)</kbd>
+	<kbd>![](./images/media/MoRE_runApplication7.png)</kbd>
+
+
+8. You should see that the request is now served by the other Liberty instance.
+
+	<kbd>![](./images/media/MoRE_runApplication8.png)</kbd>
+
 
 </details>
 
