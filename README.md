@@ -814,29 +814,46 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 
 7. To map the application to the Liberty cluster and the IBM HTTP Server, select both entries under **Clusters and servers**, set a checkmark next to **WhereAmI-2.0.1.war** and click **Apply**.
 
-	<kbd>![MoRE_installApp6](./images/media/MoRE_installApp7.png)</kbd>
+	<kbd>![MoRE_installApp7](./images/media/MoRE_installApp7.png)</kbd>
 
 
-4. Leave the default host
+8. Verify that the application war is mapped to the webserver and the Liberty cluster, then click **Next**.
 
-	<kbd>![](./images/media/MoRE_deployApp5.png)</kbd>
+	<kbd>![MoRE_installApp8](./images/media/MoRE_installApp8.png)</kbd>
 
-5. Change the context root to **/liberty**
+9. Leave the default host and click **Next**.
 
-	<kbd>![](./images/media/MoRE_deployApp6.png)</kbd>
+	<kbd>![MoRE_installApp9](./images/media/MoRE_installApp9.png)</kbd>
 
-6. Review the summary
+10. Change the context root from **/** to **/liberty**, then click **Next**
 
-	<kbd>![](./images/media/MoRE_deployApp7.png)</kbd>
+	<kbd>![MoRE_installApp10](./images/media/MoRE_installApp10.png)</kbd>
 
 
-7. Take a look at the wsadmin script
+11. Review the summary, then click on the link for **Command Assistance**.
 
-	<kbd>![](./images/media/MoRE_deployApp8.png)</kbd>
+	<kbd>![MoRE_installApp11](./images/media/MoRE_installApp11.png)</kbd>
 
-8. Finally save the application. It should be listed as stopped.
 
-	<kbd>![](./images/media/MoRE_deployApp9.png)</kbd>
+12. Take a look at the related wsadmin command **AdminApp.install**, then close the window by clicking **x**.
+
+	<kbd>![MoRE_installApp12](./images/media/MoRE_installApp12.png)</kbd>
+
+13. Back on the Summary page, click **Finish**.
+
+	<kbd>![MoRE_installApp13](./images/media/MoRE_installApp13.png)</kbd>
+
+14. Click to **Save** to save the configuration changes.
+
+	<kbd>![MoRE_installApp14](./images/media/MoRE_installApp14.png)</kbd>
+
+15. Wait until the synchronization has completed, then click **OK**.
+
+	<kbd>![MoRE_installApp15](./images/media/MoRE_installApp15.png)</kbd>
+
+16. The new application should be listed as **stopped**.
+
+	<kbd>![MoRE_installApp16](./images/media/MoRE_installApp16.png)</kbd>
 
 
 ## Start the cluster and test the application
