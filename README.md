@@ -669,12 +669,12 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 		<kbd>![](./images/media/MoRE_createCluster6.png)</kbd>
 
 
-	7. Before saving the cluster, take a look at the related wsadmin commands.
+	7. Before saving the cluster, look at the related wsadmin commands.
 	Click on the link below **Command Assistance** to open the Command Assistance.
 
 		<kbd>![](./images/media/MoRE_createCluster7.png)</kbd>
 
-	8. Take a look at the listed commands like **createCluster** and **createClusterMember**. You could use these commands to automate the cluster creation. Finally close the window by clicking on **x**.
+	8. Look at the listed commands like **createCluster** and **createClusterMember**. You could use these commands to automate the cluster creation. Finally close the window by clicking on **x**.
 
 		<kbd>![](./images/media/MoRE_createCluster8.png)</kbd>
 
@@ -688,7 +688,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 7. Review the configuration
 
-	1. CLick on the cluster name **managedLibertyCluster1** to open the configuration.
+	1. Click on the cluster name **managedLibertyCluster1** to open the configuration.
 
 		<kbd>![](./images/media/MoRE_reviewCluster1.png)</kbd>
 
@@ -697,7 +697,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 		<kbd>![](./images/media/MoRE_reviewCluster2.png)</kbd>
 
-	3. Click on **Local Topology** to take a look at the local topology.
+	3. Click on **Local Topology** to see the local topology.
 
 		<kbd>![](./images/media/MoRE_reviewCluster3.png)</kbd>
 
@@ -834,7 +834,7 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 	<kbd>![MoRE_installApp11](./images/media/MoRE_installApp11.png)</kbd>
 
 
-12. Take a look at the related wsadmin command **AdminApp.install**, then close the window by clicking **x**.
+12. Look at the related wsadmin command **AdminApp.install**, then close the window by clicking **x**.
 
 	<kbd>![MoRE_installApp12](./images/media/MoRE_installApp12.png)</kbd>
 
@@ -871,7 +871,7 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 
 	<kbd>![](./images/media/MoRE_runApplication3.png)</kbd>
 
-4. Take a look at the wsadmin command, then close the window by clicking on **x**
+4. Look at the wsadmin command, then close the window by clicking on **x**
 
 	<kbd>![](./images/media/MoRE_runApplication4.png)</kbd>
 
