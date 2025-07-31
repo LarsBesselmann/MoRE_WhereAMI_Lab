@@ -633,15 +633,28 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 		<kbd>![WAS_Login_Panel](./images/media/WAS_Enable_CommandAssistance.png)</kbd>
 
-4. Create a managed Liberty cluster named managedLibertyCluster1
+4. Navigate to **Servers > All Servers** to see the servers defined in the WebSphere cell. As you can see, there are several servers defined.
+For the lab we only use the web server and the servers from tWASCluster1.
 
-	<kbd>![](./images/media/MoRE_createCluster1.png)</kbd>
+	<kbd>![WAS_AllServers](./images/media/WAS_AllServers.png)</kbd>
 
-	<kbd>![](./images/media/MoRE_createCluster2.png)</kbd>
+5. Navigate to **Servers > Clusters > WebSphere application server clusters** to see the clusters defined in the WebSphere cell. As you can see, there is only the cluster tWASCluster1 defined. 
 
-2. Create the first cluster member on the first node based on the managed Liberty server template.
+	<kbd>![WAS_AllServers](./images/media/WAS_Clusters.png)</kbd>
+
+6. Create a managed Liberty cluster named managedLibertyCluster1. 
+
+	1. Click on **New** to create a new cluster.
+
+		<kbd>![](./images/media/MoRE_createCluster1.png)</kbd>
+
+	2. Enter **managedLibertyCluster1** for the Cluster name, then click **Next**.
+
+		<kbd>![](./images/media/MoRE_createCluster2.png)</kbd>
+
+	3. Create the first cluster member called **LibertyClusterMember1** on the node **rhel9-baseNode01** and select as basis to use the server template **default-managed-liberty-server**.
 	
-	<kbd>![](./images/media/MoRE_createCluster3.png)</kbd>
+		<kbd>![](./images/media/MoRE_createCluster3.png)</kbd>
 
 3. Add another cluster member, this time on the sevcond node.
 
