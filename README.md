@@ -10,13 +10,23 @@ At the end of this lab, you should be able to:
   - use Application Modernization Accelerator Development Tools (AMA Dev Tools) to modernize the application to make it work on MoRE.
   - create within a traditional WebSphere Application Cell a managed Liberty cluster and deploy the modernized application.
   
-The lab consists of two parts:
+The lab consists of three parts:
 
-- Part 1: AMA - Analyze the application WhereAmI using AMA and modernize it using the AMA Dev Tools
-- Part 2: MoRE - Create in MoRE a managed Liberty cluster and deploy the application
+- Part 1: AMA - Analyze the application WhereAmI using AMA
 
-You will need an estimated **60 to 90 minutes** to complete all parts of the lab.
-After the lab setup, you will be able to skip part 1 (AMA) and move directly to part 2 (MoRE).
+- Part 2: AMA Dev Tools - Modernize the application WhereAmI using the AMA Dev Tools
+
+- Part 3: MoRE - Create in MoRE a managed Liberty cluster and deploy the application
+
+You will need an estimated **60 to 90 minutes** to complete all parts of the lab. The parts should be done in sequence.
+
+## Fast-Pass: 
+You can skip the one or other part of the lab. 
+- You can start with part 2 (AMA Dev Tools) and skip part 2 (the AMA part)
+- You can start with part 3 (MoRE) and skip part 1 and 2 (the AMA and AMA Dev Tools part)
+
+If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Fast Pass](#fast-path-to-do-demos---general-steps)
+
 
 
 
