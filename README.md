@@ -858,17 +858,30 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 
 ## Start the cluster and test the application
 
-1. Start the cluster
+1. Navigate to **Servers > Clusters > WebSphere application server cluster**. 
+	The Liberty cluster should be stopped. 
 
 	<kbd>![](./images/media/MoRE_runApplication1.png)</kbd>
 
 
-2. Review the wsadmin script
+2. Select the Liberty cluster and click on **Start** to start the cluster.
 
 	<kbd>![](./images/media/MoRE_runApplication2.png)</kbd>
 
+2. Click on the link for the **Command Assistance** to see the related wsadmin script.
 
-3. Access the application via IBM HTTP Server
+	<kbd>![](./images/media/MoRE_runApplication3.png)</kbd>
+
+4. Take a look at the wsadmin command, then close the window by clicking on **x**
+
+	<kbd>![](./images/media/MoRE_runApplication4.png)</kbd>
+
+5. Navigate to **Servers > All servers** and verify that the Liberty servers as well as the IBM HTTP Server are running.
+
+	<kbd>![](./images/media/MoRE_runApplication5.png)</kbd>
+
+
+6. Access the application via IBM HTTP Server at the URL **http://localhost:8080/liberty/WhereAmI
 
 	<kbd>![](./images/media/MoRE_runApplication3.png)</kbd>
 
