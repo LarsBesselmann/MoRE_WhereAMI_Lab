@@ -2,7 +2,15 @@
 
 ## Objectives
 
-In this exercise, you will learn how developers can use AMA and AMA Dev Tools to modernize an existing Java Enterprise Application for target MoRE (Modernized Runtime Extension for Java). 
+In this exercise, you will learn how developers can use the **Application Modernization Accelerator (AMA)** and the **Application Modernization Accelerator Developer Tools (AMA Dev Tools)** to modernize an existing Java Enterprise Application for the target runtime **Modernized Runtime Extension for Java (MoRE)**. 
+
+The lab consists of three parts:
+
+- Part 1: AMA - Analyze the application WhereAmI using AMA
+- Part 2: AMA Dev Tools - Modernize the application WhereAmI using the AMA Dev Tools
+- Part 3: MoRE - Create in MoRE a managed Liberty cluster and deploy the application
+
+You will need an estimated **60 to 90 minutes** to complete all parts of the lab. The parts should be done in sequence.
 
 At the end of this lab, you should be able to:
 
@@ -10,15 +18,6 @@ At the end of this lab, you should be able to:
   - use Application Modernization Accelerator Development Tools (AMA Dev Tools) to modernize the application to make it work on MoRE.
   - create within a traditional WebSphere Application Cell a managed Liberty cluster and deploy the modernized application.
   
-The lab consists of three parts:
-
-- Part 1: AMA - Analyze the application WhereAmI using AMA
-
-- Part 2: AMA Dev Tools - Modernize the application WhereAmI using the AMA Dev Tools
-
-- Part 3: MoRE - Create in MoRE a managed Liberty cluster and deploy the application
-
-You will need an estimated **60 to 90 minutes** to complete all parts of the lab. The parts should be done in sequence.
 
 ## Fast-Pass: 
 You can skip the one or other part of the lab. 
