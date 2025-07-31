@@ -469,7 +469,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 
 
-4. As you can see, AMA has discovered two applications. The WhereAmI application has no dependencies to other applications, databases or queues.
+4. As you can see, AMA has discovered two applications. The WhereAmI application has no dependencies on other applications, databases or queues.
 
 	<kbd>![](./images/media/AMA_Visualization2.png)</kbd>
 
@@ -479,7 +479,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 	<kbd>![AMA_Assessment](./images/media/AMA_Assessment.png)</kbd>
 
-	Click on the **WhereAmI** application to get more insight about the issues
+	Click on the **WhereAmI** application to get more insight into the issues
 
 
 6. In the top of the page, you can see an overview 
@@ -537,7 +537,7 @@ The AMA Dev Tools is an extension for IDEs. You will use Visual Studio Code and 
 
 	<kbd>![vscode_welcome](./images/media/vscode_welcome.png)</kbd>
 
-	During the lab, several information panels appear with recommendations what to update or install. Ignore those panels and close them by clicking on **x**.
+	During the lab, several information panels appear with recommendations about what to update or install. Ignore those panels and close them by clicking on **x**.
 
 	<kbd>![vscode_warning1](./images/media/vscode_warning1.png)</kbd>
 
@@ -589,7 +589,7 @@ Click on **Proceed** to continue.
 
 	<kbd>![](./images/media/AMADevTool_ModernizationWizard6.png)</kbd>
 
-	From the project explorer, expand the target directory and you shoud find the generated war file WhereAmI-2.0.1.war. 
+	From the project explorer, expand the target directory and you should find the generated war file WhereAmI-2.0.1.war. 
 
 	<kbd>![WhereAmI_201_war](./images/media/WhereAmI_201_war.png)</kbd>
 
