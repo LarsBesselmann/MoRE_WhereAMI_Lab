@@ -933,20 +933,12 @@ You should have seen how easy it can be to migrate an application from tradition
 
 ### Cleanup WebSphere
 
-1. Uninstall the WhereAmI application
-
-		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_WhereAmI_uninstall.py 
-
-2. Delete the tWAS cluster called tWASCluster1 and the two members (tWASMember1, tWASMember2).
-
-		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_delete.py 
-
-3. Stop the IBM HTTP Server via command
+1. Stop the IBM HTTP Server via command
 
 		/home/techzone/IBM/HTTPServer/bin/apachectl stop
 
 
-4. Stop the Deyploment Manager and the two Node agents
+2. Stop the Deyploment Manager and the two Node agents
 
 		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/stopNode.sh
 		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh
