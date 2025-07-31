@@ -365,7 +365,8 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ## Assess and update the application for target MoRE
 
-### Run the AMA data collector to scan the environment {###AMA_datacollector}
+### Run the AMA data collector to scan the environment 
+
 <details open>
 <Summary> Run the Application Modernization Accelerator data collector to scan the WebSphere environment. The generated data collection will be uploaded automatically.</Summary>
 
@@ -1008,6 +1009,7 @@ Execute the following mandatory commands:
     mvn clean
 	mvn package
 
+<br>
 
 ### Additional steps for AMA Analyze scenario (using the prepackaged data collection)
 For the **AMA Analyze scenario**, there are some steps required in addition to the mandatory steps mentioned before.
@@ -1023,10 +1025,9 @@ For the **AMA Analyze scenario**, there are some steps required in addition to t
 
 Now you can do the analysis via AMA as documented in the section **Use AMA to identify required code changes for target MoRE**.
 
+[Link to the AMA Analysis scenario](#use-ama-to-identify-required-code-changes-for-target-more)
 
-[Link to section] (###Section-Remove-the-lab-assests)
-
-
+<br>
 
 ### Additional steps for AMA Dev Tools scenario (using the prepackaged migration plan)
 
@@ -1034,6 +1035,10 @@ For the **AMA Dev Tools scenario**, there are no additional steps required in ad
 
 Do the modernization via AMA Dev Tools as described in the section **Use the AMA Dev Tools to apply automated fixes**. 
 Use the migration plan **~/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Migrationplan/WhereAmI-2_0_0_war.ear_migrationPlan.zip**
+
+[Link to the AMA Dev Tools scenario](#use-the-ama-dev-tools-to-apply-automated-fixes)
+
+<br>
 
 
 ### Additional steps for MoRE scenario
@@ -1068,6 +1073,9 @@ For the **MoRE scenario**, there are some steps required in addition to the mand
 		Log command assistance commands
 
 Do the MoRE setup and application deployment as described in the section **Set up the managed Liberty cluster and deploy the modernized WhereAmI application**. 
+
+[Link to the MoRE scenario](#set-up-the-managed-liberty-cluster-and-deploy-the-modernized-whereami-application)
+
 
 </details>
 
