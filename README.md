@@ -838,8 +838,14 @@ For the lab we only use the web server and the servers from tWASCluster1.
 
 	<kbd>![](./images/media/MoRE_runApplication4.png)</kbd>
 
+</details>
 
-**This concludes the demo**
+<br>
+
+**--- This concludes the MoRE part of the lab. ---**
+
+
+
 You should have seen how easy it can be to migrate an application from traditional WAS to managed Liberty and that you could use the same operational model in managed Liberty.
 
 
