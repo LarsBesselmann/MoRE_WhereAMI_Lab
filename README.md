@@ -758,7 +758,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 		<kbd>![](./images/media/MoRE_ports9.png)</kbd>
 
-	11. Wait untill the synchronization has completed, then click on **OK**.
+	11. Wait until the synchronization has completed, then click on **OK**.
 
 		<kbd>![](./images/media/MoRE_ports10.png)</kbd>
 
@@ -807,7 +807,7 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 
 	<kbd>![MoRE_installApp5](./images/media/MoRE_installApp5.png)</kbd>
 
-6. Leave the default for theh application name, then click **Next**
+6. Leave the default for the application name, then click **Next**
 
 	<kbd>![MoRE_installApp6](./images/media/MoRE_installApp6.png)</kbd>
 
