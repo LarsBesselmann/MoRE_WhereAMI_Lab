@@ -35,7 +35,7 @@ Nevertheless you can skip the one or other part of the lab.
 - You can start with part 3 (AMA Dev Tools) and skip the AMA assessment
 - You can start with part 4 (MoRE) and skip the assessment and code updates
 
-If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Fast Pass](#fast-path-to-do-demos---general-steps)
+If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Fast Pass - How to](#fast-path---how-to-skip-parts-of-the-lab)
 
 
 
@@ -1004,7 +1004,7 @@ Then perform the following steps:
 
 
 
-## Fast Path to do demos - general steps
+## Fast Path - How to skip parts of the lab
 
 <details open>
 <summary>
