@@ -2,15 +2,23 @@
 
 ## Objectives
 
-In this exercise, you will learn how developers can use the **Application Modernization Accelerator (AMA)** and the **Application Modernization Accelerator Developer Tools (AMA Dev Tools)** to modernize an existing Java Enterprise Application for the target runtime **Modernized Runtime Extension for Java (MoRE)**. 
+In this exercise, you will learn how developers can use the **IBM Application Modernization Accelerator (AMA)** and the **IBM Application Modernization Accelerator Developer Tools (AMA Dev Tools)** to modernize an existing Java Enterprise Application for the target runtime **IBM Modernized Runtime Extension for Java (MoRE)**. 
 
-The lab consists of three parts:
+The lab consists of four parts:
 
-- Part 1: AMA - Analyze the application WhereAmI using AMA
-- Part 2: AMA Dev Tools - Modernize the application WhereAmI using the AMA Dev Tools
-- Part 3: MoRE - Create in MoRE a managed Liberty cluster and deploy the application
+- Part 1: Use the **IBM Application Modernization Accelerator (AMA)** data collector
+	- Use the AMA data collector to scan an application server landscape
+- Part 2: Use the **IBM Application Modernization Accelerator (AMA)** 
+	- Analyze one of the discovered applications using AMA
+	- Create a migration plan
+- Part 3: Use the **Application Modernization Accelerator Developer Tools (AMA Dev Tools)**
+	- Review the modernization issues in the source code.
+	- Apply automated fixed to resolve modernization issues
+- Part 4: Deploy to **IBM Modernized Runtime Extension for Java (MoRE)**
+	- Create a managed Liberty cluster
+	- Deploy the modernized application
 
-You will need an estimated **60 to 90 minutes** to complete all parts of the lab. The parts should be done in sequence.
+You will need an estimated **60 to 90 minutes** to complete all parts of the lab. But there is also a fast pass to skip a part.
 
 At the end of this lab, you should be able to:
 
@@ -21,8 +29,9 @@ At the end of this lab, you should be able to:
 
 ## Fast-Pass: 
 You can skip the one or other part of the lab. 
-- You can start with part 2 (AMA Dev Tools) and skip part 2 (the AMA part)
-- You can start with part 3 (MoRE) and skip part 1 and 2 (the AMA and AMA Dev Tools part)
+- You can start with part 2 (AMA Assessment) and skip the AMA datacollection
+- You can start with part 3 (AMA Dev Tools) and skip the AMA assessment
+- You can start with part 4 (MoRE) and skip the assessment and code updates
 
 If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Fast Pass](#fast-path-to-do-demos---general-steps)
 
