@@ -1023,7 +1023,8 @@ For the **AMA Analyze scenario**, there are some steps required in addition to t
 
 Now you can do the analysis via AMA as documented in the section **Use AMA to identify required code changes for target MoRE**.
 
-[Link to section] (###AMA_datacollector)
+
+[Link to section] (###Section-Remove-the-lab-assests)
 
 
 
