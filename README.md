@@ -2,7 +2,7 @@
 
 ## Objectives
 
-In this exercise, you will learn how developers can use watsonx Code Assistant with VS Code Integrated Development Environment for modernizing an existing Java Enterprise Application. 
+In this exercise, you will learn how developers can use AMA and AMA Dev Tools to modernize an existing Java Enterprise Application for target MoRE (Modernized Runtime Extension for Java). 
 
 At the end of this lab, you should be able to:
 
