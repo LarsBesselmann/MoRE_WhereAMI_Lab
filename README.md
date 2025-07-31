@@ -31,9 +31,9 @@ At the end of this lab, you should be able to:
 To get a good overiew about the capabilities provided by the IBM solutions, it is recommended to do all parts in sequence. 
 
 Nevertheless you can skip the one or other part of the lab. 
-- You can start with part 2 (AMA Assessment) and skip the AMA datacollection
+- You can start with part 2 (AMA Assessment) and skip the AMA data collection
 - You can start with part 3 (AMA Dev Tools) and skip the AMA assessment
-- You can start with part 4 (MoRE) and skip the assessment and code updates
+- You can start with part 4 (MoRE) and skip the assessment and modification of the application code
 
 If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Shortcut - How to](#shortcut---how-to-skip-parts-of-the-lab)
 
