@@ -693,7 +693,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 		<kbd>![](./images/media/MoRE_reviewCluster1.png)</kbd>
 
 
-	2. On the **Configuration** tab, expand the section **CLuster members**.
+	2. On the **Configuration** tab, expand the section **Cluster members**.
 
 		<kbd>![](./images/media/MoRE_reviewCluster2.png)</kbd>
 
@@ -708,7 +708,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 8. Review the ports and add missing HTTP ports to the virtual hosts
 
-	1. Navigate to **Servers > All servers**, then open the server setting for server **LibertyClusterMember1** by clicking on the server name.
+	1. Navigate to **Servers > All servers**, then open the server setting for server **LibertyClusterMember1** by clicking on the server's name.
 	
 		<kbd>![MoRE_LibertyClusterMember1.png](./images/media/MoRE_LibertyClusterMember1.png)</kbd>
 	
@@ -717,7 +717,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 		<kbd>![](./images/media/MoRE_ports1.png)</kbd>
 
-	3. Navigate to **Servers > All servers**, then open the server setting for server **LibertyClusterMember2** by clicking on the server name.
+	3. Navigate to **Servers > All servers**, then open the server setting for server **LibertyClusterMember2** by clicking on the server's name.
 	
 		<kbd>![MoRE_LibertyClusterMember2.png](./images/media/MoRE_LibertyClusterMember2.png)</kbd>
 	
@@ -734,7 +734,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 	
 		<kbd>![](./images/media/MoRE_ports4.png)</kbd>
 
-	7. By sorting the ports in decending order, you can see that the ports 9084 and 9085 have not been defined yet.
+	7. By sorting the ports in descending order, you can see that the ports 9084 and 9085 have not been defined yet.
 	
 		<kbd>![](./images/media/MoRE_ports5.png)</kbd>
 
