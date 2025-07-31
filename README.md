@@ -27,7 +27,7 @@ At the end of this lab, you should be able to:
   - create within a traditional WebSphere Application Cell a managed Liberty cluster and deploy the modernized application.
   
 
-## Fast-Pass: 
+## Shortcut: 
 To get a good overiew about the capabilities provided by the IBM solutions, it is recommended to do all parts in sequence. 
 
 Nevertheless you can skip the one or other part of the lab. 
@@ -35,7 +35,7 @@ Nevertheless you can skip the one or other part of the lab.
 - You can start with part 3 (AMA Dev Tools) and skip the AMA assessment
 - You can start with part 4 (MoRE) and skip the assessment and code updates
 
-If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Fast Pass - How to](#fast-path---how-to-skip-parts-of-the-lab)
+If you want to skip a part of the lab, there might be some additional steps to be done. Details on how to skip a lab can be found in the appendix in the section [Fast Pass - How to](#shortcut---how-to-skip-parts-of-the-lab)
 
 
 
@@ -1004,14 +1004,14 @@ Then perform the following steps:
 
 
 
-## Fast Path - How to skip parts of the lab
+## Shortcut - How to skip parts of the lab
 
 <details open>
 <summary>
 Here you can find details how to skip a lab or do a demo without having to run through the whole lab.
 </summary>
 
-The fast pass section is mainly targeted for attendees that already worked with the tools. Therefore it does not provide screenshots or detailed steps how to perform a task. 
+The shortcut section is mainly targeted for attendees that already worked with the tools. Therefore it does not provide screenshots or detailed steps how to perform a task. 
 
 ### Mandatory steps for all scenarios
 
