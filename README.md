@@ -1048,9 +1048,9 @@ Steps to clean up the environment.
 
 6. Stop the Dmgr and the two Node agents
 
-		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/stopNode.sh
-		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh
-		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh 
+		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/stopNode.sh -user techzone -password IBMDem0s! 
+		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh -user techzone -password IBMDem0s! 
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh -user techzone -password IBMDem0s! 
 
 ### Remove the lab assests
 1. Close VS Code
