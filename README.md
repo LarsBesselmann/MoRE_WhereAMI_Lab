@@ -363,7 +363,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 </details>
 
-## Assess the application for target MoRE
+## Assess and update the application for target MoRE
 
 ### Run the AMA data collector to scan the environment 
 <details open>
@@ -598,7 +598,9 @@ Click on **Proceed** to continue.
 
 </details>
 
-This concludes the AMA part of the lab.
+<br>
+
+**--- This concludes the AMA part of the lab. ---**
 
 
 
