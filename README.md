@@ -441,7 +441,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 <Summary> Use the Application Modernization Accelerator to analyze the application and identify required code changes. Generate a migration bundle which then will be used in the AMA Dev Tools </Summary>
 
 
-1. Switch to the browser and access AMA via the URL **https://rhel9-base.gym.lan:3001.**, then open the **MoRE_Demo** workspace.
+1. Switch to the browser and access AMA via the URL **https://rhel9-base.gym.lan:3001**, then open the **MoRE_Demo** workspace.
 
 	<kbd>![AMA_MoRE_workspace](./images/media/AMA_MoRE_workspace.png)</kbd>
 
@@ -521,7 +521,7 @@ The AMA Dev Tools is an extension for IDEs. You will use Visual Studio Code and 
 
 1. In a terminal window, switch to the **WhereAmI** directory and open VS Code
 
-		cd WhereAmI_JavaEE_Project/WhereAmI
+		cd ~/Student/labs/WhereAmI_MoRE_Demo_assets/WhereAmI
 		code .
 
 2. Change in the pom.xml file the version from 2.0.0 to 2.0.1
