@@ -6,9 +6,9 @@ In this exercise, you will learn how developers can use watsonx Code Assistant w
 
 At the end of this lab, you should be able to:
 
-  - use Application Modernization Accelerator (AMA) to assess an application for target Modernized Runtime Extensions for Java (MoRE)
-  - use Application Modernization Accelerator Development Tools (AMA Dev Tools) to modernize the application to make it work on MoRE
-  - create within a traditional WebSphere Application Cell a managed Liberty cluster and deploy the modernized application
+  - use Application Modernization Accelerator (AMA) to assess an application for target Modernized Runtime Extensions for Java (MoRE).
+  - use Application Modernization Accelerator Development Tools (AMA Dev Tools) to modernize the application to make it work on MoRE.
+  - create within a traditional WebSphere Application Cell a managed Liberty cluster and deploy the modernized application.
   
 The lab consists of two parts:
 
@@ -61,7 +61,7 @@ IBM, the IBM logo, and ibm.com are trademarks of International Business Machines
 <details>
 
 <summary>The section contains details about the environment.
-If you use the lab environment that has been prepared for the lab, it has already the prerequisite software installed and configured.</summary>
+If you use the lab environment that has been prepared for the lab, it has already the required software installed and configured.</summary>
 
 
 ### Required software
@@ -99,7 +99,7 @@ The final MoRE cell looks like in the diagram below, it will be fronted by an IB
 
 ### Accessing the lab environment
 
-If you are doing this lab as part of an instructor led workshop (virtual or face to face), an environment has already been provisioned for you. The instructor will provide the details for accessing the lab environment.
+If you are doing this lab as part of an instructor-led workshop (virtual or face to face), an environment has already been provisioned for you. The instructor will provide the details for accessing the lab environment.
 
 Otherwise, you will need to reserve an environment for the lab. You can obtain one here. Follow the on-screen instructions for the “**Reserve now**” option.
 
@@ -168,7 +168,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 |         |           |  
 | ------------- |:-------------|
-| ![](./images/media/info.png?cropResize=100,100)   | <p><strong>IMPORTANT:</strong></p><p>Using the lab environment provided, all the required VS code extensions and dependencies have been installed for you.</p><p>This allows you to focus on the value of using the capabilities of the tools for fast, efficient inner-loop development, test, debug, of Java based applications and Microservices using Open Liberty in dev mode.</p></p> |
+| ![](./images/media/info.png?cropResize=100,100)   | <p><strong>IMPORTANT:</strong></p><p>Using the lab environment provided, all the required VS code extensions and dependencies have been installed for you.</p><p>This allows you to focus on the value of using the capabilities of the tools for fast, efficient inner-loop development, test and debug of Java based applications and Microservices using Open Liberty in dev mode.</p></p> |
   <br/>
 
 
@@ -199,7 +199,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
     > **NOTE:** Sometimes pasting into a Terminal window in the VM does not work consistently. 
     
-    > In this case you might try again, or open another Terminal Window and try again, or  paste the text into a **Text Editor** in the VM, and then paste it into the Terminal window in the VM. 
+    > In this case you might try again, or open another Terminal Window and try again, or  paste the text into a **Text Editor** in the VM and then paste it into the Terminal window in the VM. 
 
 
 3. An alternative to using the noVNC Copy / Paste option, you may consider opening the lab guide in a web browser inside of the VM. Using this method, you can easily copy / paste text from the lab guide without having to use the noVNC clipboard. 
@@ -243,7 +243,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 		mkdir -p ~/Student/labs
 		git clone https://github.com/LarsBesselmann/MoRE_WhereAMI_lab.git ~/Student/labs
 
-4. Switch to the directory WhereAmI_MoRE_Demo_assets and uzip the initial project
+4. Switch to the directory WhereAmI_MoRE_Demo_assets and unzip the initial project
 
 		cd ~/Student/labs/WhereAmI_MoRE_Demo_assets
 		unzip WhereAmI-2.0.0-Project.zip
@@ -272,7 +272,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ### Prepare the MoRE cell and deploy the application
 
-1. Start the Dmgr and the two Node agents
+1. Start the Deployment Manager and the two Node agents
 
 		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/startManager.sh 
 		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.sh
@@ -336,7 +336,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 	<kbd>![](./images/media/WhereAmI_tWAS_started.png)</kbd>
 
-	Click on the application **WhereAmI-2.0.0.war**, then click on **Manmage Modules**.
+	Click on the application **WhereAmI-2.0.0.war**, then click on **Manage Modules**.
 
 	<kbd>![](./images/media/WhereAmI_tWAS_mapping.png)</kbd>
 
