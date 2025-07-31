@@ -939,13 +939,13 @@ You should have seen how easy it can be to migrate an application from tradition
 		/home/techzone/IBM/HTTPServer/bin/apachectl stop
 
 
-4. Stop the Dmgr and the two Node agents
+4. Stop the Deyploment Manager and the two Node agents
 
 		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/stopNode.sh
 		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh
 		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh 
 
-### Remove the lab assests
+### Remove the lab assets
 1. Close VS Code
 
 2. Remove the project directory
