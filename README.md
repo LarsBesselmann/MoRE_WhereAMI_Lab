@@ -6,12 +6,12 @@ In this exercise, you will learn how developers can use the **IBM Application Mo
 
 The lab consists of four parts:
 
-- Part 1: Use the **IBM Application Modernization Accelerator (AMA)** data collector
+- Part 1: Use the **IBM Application Modernization Accelerator (AMA)** data collector 
 	- Use the AMA data collector to scan an application server landscape
-- Part 2: Use the **IBM Application Modernization Accelerator (AMA)** 
+- Part 2: Use the **IBM Application Modernization Accelerator (AMA)** Visualization and Assessment capabilities
 	- Analyze one of the discovered applications using AMA
 	- Create a migration plan
-- Part 3: Use the **Application Modernization Accelerator Developer Tools (AMA Dev Tools)**
+- Part 3: Use the **Application Modernization Accelerator Developer Tools (AMA Dev Tools)** to update the code
 	- Review the modernization issues in the source code.
 	- Apply automated fixed to resolve modernization issues
 - Part 4: Deploy to **IBM Modernized Runtime Extension for Java (MoRE)**
