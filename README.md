@@ -438,7 +438,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 ### Use AMA to identify required code changes for target MoRE
 <details open>
-<Summary> Use the Application Modernization Accelerator to analyze the application and identify required code changes. Generate a migration bundle which then will be used in the AMA Dev Tools </Summary>
+<Summary> Use the Application Modernization Accelerator to analyze the application and identify required code changes. Generate a migration plan which then will be used in the AMA Dev Tools </Summary>
 
 
 1. Switch to the browser and access AMA via the URL **https://rhel9-base.gym.lan:3001**, then open the **MoRE_Demo** workspace.
@@ -904,4 +904,90 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 **--- Congratulations. You have completed the AMA and MoRE lab. ---**
 
 You should have seen how easy it can be to migrate an application from traditional WAS to managed Liberty and that you could use the same operational model in managed Liberty.
+
+# Appendix
+
+## Fast Path to do demos - general steps
+
+<details open>
+
+
+### Mandatory steps for all scenarios
+
+Execute the following mandatory commands:
+
+	# Download the lab assets
+	mkdir -p ~/Student/labs
+	git clone https://github.com/LarsBesselmann/MoRE_WhereAMI_lab.git ~/Student/labs
+
+	# Extract the assets
+	cd ~/Student/labs/WhereAmI_MoRE_Demo_assets
+	unzip WhereAmI-2.0.0-Project.zip
+
+	# Build the initialapplication
+	cd WhereAmI
+	mvn install:install-file -Dfile=./was_dependency/was_public.jar -DpomFile=./was_dependency/was_public-9.0.0.pom
+    mvn clean
+	mvn package
+
+
+### Additional steps for AMA Analyze scenario (using the prepared data collection)
+For the **AMA Analyze scenario**, there are some steps required in addition to the mandatory steps mentioned before.
+
+1. Start AMA via command
+	
+		cd ~/application-modernization-accelerator-local-4.3.0/
+		scripts/startLocal.sh 
+
+2. Open AMA via URL https://rhel9-base.gym.lan:3001
+3. In AMA, create a workspace called **MoRE_Demo**
+4. In the AMA **MoRE_Demo** workspace, upload the data collection **/home/techzone/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Collection/Dmgr01.zip**
+
+Now you can do the analysis via AMA as documented in the section **Use AMA to identify required code changes for target MoRE**.
+
+
+### Additional steps for AMA Dev Tools scenario (using the prepared migration plan)
+
+For the **AMA Dev Tools scenario**, there are no additional steps required in addition to the mandatory steps mentioned before.
+
+Do the modernization via AMA Dev Tools as described in the section **MoRE_Demo**. 
+Use the migration plan **~/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Migrationplan/WhereAmI-2_0_0_war.ear_migrationPlan.zip**
+
+
+### Additional steps for MoRE scenario
+For the **MoRE scenario**, there are some steps required in addition to the mandatory steps mentioned before.
+
+1. Start the Deployment Manager and the two Node agents
+
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/startManager.sh 
+		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.sh
+		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/startNode.sh
+
+2. Use wsadmin to create a tWAS cluster and deploy the application
+
+		# Create cluster
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_create.py 
+
+		# Install tWAS app
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_WhereAmI_install.py 
+
+		# Start the tWAS cluster
+		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_start.py 
+
+		# Start the IBM HTTP Server
+		/home/techzone/IBM/HTTPServer/bin/apachectl start
+
+3. Access the WAS Admin Console at https://localhost:9043/ibm/console.
+	Enable command assistance
+
+	1. Navigate to **System administration > Console preferences**
+	2. Select the following options:
+
+		Enable command assistance notifications
+		Log command assistance commands
+
+Do the MoRE setup and application deployment as described in the section **Set up the managed Liberty cluster and deploy the modernized WhereAmI application**. 
+
+</details>
+
 
