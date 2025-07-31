@@ -957,11 +957,13 @@ Use the migration plan **~/Student/labs/WhereAmI_MoRE_Demo_assets/AMA_Migrationp
 ### Additional steps for MoRE scenario
 For the **MoRE scenario**, there are some steps required in addition to the mandatory steps mentioned before.
 
-1. Start the Deployment Manager and the two Node agents
+1. Start the Deployment Manager and the two Node agents as well as the IHS.
 
 		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/startManager.sh 
 		~/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.sh
 		~/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/startNode.sh
+
+		/home/techzone/IBM/HTTPServer/bin/apachectl start
 
 2. Use wsadmin to create a tWAS cluster and deploy the application
 
@@ -973,9 +975,6 @@ For the **MoRE scenario**, there are some steps required in addition to the mand
 
 		# Start the tWAS cluster
 		~/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -lang jython -user techzone -password IBMDem0s! -f ~/Student/labs/WhereAmI_MoRE_Demo_assets/setupScripts/tWASCluster_start.py 
-
-		# Start the IBM HTTP Server
-		/home/techzone/IBM/HTTPServer/bin/apachectl start
 
 3. Access the WAS Admin Console at https://localhost:9043/ibm/console.
 	Enable command assistance
