@@ -774,26 +774,47 @@ For the lab we only use the web server and the servers from tWASCluster1.
 </details>
 
 
-## Deploy the application to a managed Liberty cluster
+## Deploy the application to a managed Liberty cluster and test it
 
 <details open>
 <Summary> Use the WebSphere Administration Console to deploy the WhereAmI appllication to a managed Liberty cluster. </Summary>
 
+During the AMA Dev Tools part of the lab, you modernized the WhereAmI application for MoRE. The application war file **WhereAmI-2.0.1.war** was generated in the directory: **~/Student/labs/WhereAmI_MoRE_Demo_assets/WhereAmI/target**.
 
+A backup version of the file **WhereAmI-2.0.1.war** can be found in the directory: **~/Student/labs/WhereAmI_MoRE_Demo_assets**.
 
-1. Select the updated WhereAmI application (which has the version 2.0.1) and select Liberty as target runtime
+### Deploy the application
 
-	<kbd>![](./images/media/MoRE_deployApp1.png)</kbd>
+1. In the WebSphere Administration console, navigate to **Applications > WebSphere enterprise applications** to see the already installed applications.
 
-2. Choose the Fast Path deployment and leave the defaults for the name
+	<kbd>![MoRE_installApp1](./images/media/MoRE_installApp1.png)</kbd>
+	Click on **Install** to install the application.
 
-	<kbd>![](./images/media/MoRE_deployApp2.png)</kbd>
+2. Select **WebSphere Liberty** as target runtime, then click on **Browse**
 
-	<kbd>![](./images/media/MoRE_deployApp3.png)</kbd>
+	<kbd>![MoRE_installApp2](./images/media/MoRE_installApp2.png)</kbd>
 
-3. Map the application to the Liberty cluster and the IBM HTTP Server
+3. Navigate to the path **~/Student/labs/WhereAmI_MoRE_Demo_assets/WhereAmI/target** and select the application archive **WhereAmI-2.0.1.war**. 
 
-	<kbd>![](./images/media/MoRE_deployApp4.png)</kbd>
+	<kbd>![MoRE_installApp3](./images/media/MoRE_installApp3.png)</kbd>
+
+	Then click on **Open**.
+
+4. Verify that the WhereAmI version 2.0.1 and the target **WebSphere Liberty** are displayed, then click on **Next**
+
+	<kbd>![MoRE_installApp4](./images/media/MoRE_installApp4.png)</kbd>
+
+5. Choose the **Fast Path** deployment and leave the defaults for the name, then click **Next**
+
+	<kbd>![MoRE_installApp5](./images/media/MoRE_installApp5.png)</kbd>
+
+6. Leave the default for theh application name, then click **Next**
+
+	<kbd>![MoRE_installApp6](./images/media/MoRE_installApp6.png)</kbd>
+
+7. To map the application to the Liberty cluster and the IBM HTTP Server, select both entries under **Clusters and servers**, set a checkmark next to **WhereAmI-2.0.1.war** and click **Apply**.
+
+	<kbd>![MoRE_installApp6](./images/media/MoRE_installApp7.png)</kbd>
 
 
 4. Leave the default host
