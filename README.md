@@ -8,7 +8,7 @@ In this exercise, you will learn how developers can use the **IBM Application Mo
 The lab consists of four parts:
 
 - Part 1: Use the **IBM Application Modernization Accelerator (AMA)** data collector 
-	- Use the AMA data collector to scan the current application server landscape
+	- Use the AMA data collector to scan the currentan application server landscape
 - Part 2: Use the **IBM Application Modernization Accelerator (AMA)** Visualization and Assessment capabilities
 	- Analyze one of the discovered applications using AMA
 	- Create a migration plan
@@ -1096,6 +1096,9 @@ For the **MoRE scenario**, there are some steps required in addition to the mand
 		Log command assistance commands
 
 Do the MoRE setup and application deployment as described in the section **Set up the managed Liberty cluster and deploy the modernized WhereAmI application**. 
+
+For the deployment to MoRE, use the application war file **~/Student/labs/WhereAmI_MoRE_Demo_assets/WhereAmI-2.0.1.war**
+
 
 [Link to the MoRE scenario](#set-up-the-managed-liberty-cluster-and-deploy-the-modernized-whereami-application)
 
