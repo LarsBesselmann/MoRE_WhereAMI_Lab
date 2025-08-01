@@ -1097,7 +1097,7 @@ For the **MoRE scenario**, there are some steps required in addition to the mand
 
 Do the MoRE setup and application deployment as described in the section **Set up the managed Liberty cluster and deploy the modernized WhereAmI application**. 
 
-You can install the application war file **~/Student/labs/WhereAmI_MoRE_Demo_assets/WhereAmI-2.0.1.war** to the managed Liberty servers.
+You can fine the modernized WhereAmI application war file here: **~/Student/labs/WhereAmI_MoRE_Demo_assets/WhereAmI-2.0.1.war**.
 
 
 [Link to the MoRE scenario](#set-up-the-managed-liberty-cluster-and-deploy-the-modernized-whereami-application)
