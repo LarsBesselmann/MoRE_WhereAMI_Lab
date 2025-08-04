@@ -353,7 +353,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 
 7. Verify that the application has been started.
 
-	1. Navigate to **Applications > Application Types > WebSphere enterprise applications**. The WhereAmI-2.0.0.war application should be running.
+	1. Navigate to **Applications > Application Types > WebSphere enterprise applications**. The WhereAmI-2.0.0.war application should be running. (Hint: It might take a while until it is detected.)
 
 	<kbd>![](./images/media/WhereAmI_tWAS_started.png)</kbd>
 
@@ -522,7 +522,7 @@ Otherwise, you will need to reserve an environment for the lab. You can obtain o
 	<kbd>![AMA_ViewMigrationPlan](./images/media/AMA_ViewMigrationPlan.png)</kbd>
 	The migration plan will be generated and displayed.
 
-10. The migration plan provides assets to deploy the application. The Liberty configuration file **server.xml** is provided to deploy the application to in development to a Liberty instance. 
+10. The migration plan provides assets to deploy the application. The Liberty configuration file **server.xml** is provided to deploy the application in development to a Liberty instance. 
 
 	<kbd>![AMA_MigrationPlan_server_xml_1](./images/media/AMA_MigrationPlan_server_xml_1.png)</kbd>
 
@@ -574,7 +574,7 @@ The AMA Dev Tools is an extension for IDEs. You will use Visual Studio Code and 
 	<kbd>![](./images/media/AMADevTool_ModernizationWizard1.png)</kbd>
 
 
-5. Click on **Upload** Upload the AMA generated migration plan into AMA Dev Tools
+5. Click on **Upload** to upload the AMA generated migration plan into AMA Dev Tools
 
 	<kbd>![AMADevTool_ModernizationWizard2](./images/media/AMADevTool_ModernizationWizard2.png)</kbd>
 
