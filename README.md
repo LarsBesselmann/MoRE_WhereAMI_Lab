@@ -806,7 +806,7 @@ A backup version of the file **WhereAmI-2.0.1.war** can be found in the director
 
 ### Deploy the application
 
-1. In the WebSphere Administration console, navigate to **Applications > WebSphere enterprise applications** to see the already installed applications.
+1. In the WebSphere Administration console, navigate to **Applications > Application Types > WebSphere enterprise applications** to see the already installed applications.
 
 	<kbd>![MoRE_installApp1](./images/media/MoRE_installApp1.png)</kbd>
 	Click on **Install** to install the application.
