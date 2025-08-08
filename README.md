@@ -727,6 +727,12 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 		<kbd>![](./images/media/MoRE_reviewCluster4.png)</kbd>
 
+	5. Navigate to **Servers > All servers** and verify that the cluster **managedLibertyCluster1** has been created with the correct template. For the servers **LibertyClusterMember1** and **LibertyClusterMember2**,  the column **Type** should show **Managed Liberty server**.
+	
+		<kbd>![MoRE_LibertyClusterMember1.png](./images/media/MoRE_LibertyClusterMembers.png)</kbd>
+	
+		If the server type is shown as **WebSphere application server**, the wrong template was used. Delete the cluster and create it again with the correct template.
+	
 
 8. Review the ports and add missing HTTP ports to the virtual hosts
 
