@@ -696,7 +696,7 @@ You can create a **managed Liberty cluster** via the WebSphere Administration co
 
 		<kbd>![](./images/media/MoRE_createCluster7.png)</kbd>
 
-	8. Look at the listed commands like **createCluster** and **createClusterMember**. As you can see, the cluster is created with the **clusterType MANAGED_LIBERTY_SERVER**. You could use these commands to automate the cluster creation. Finally close the window by clicking on **x**.
+	8. Look at the listed wsadmin commands like **createCluster** and **createClusterMember**. As you can see, the cluster is created with the **clusterType MANAGED_LIBERTY_SERVER**. You could use these commands to automate the cluster creation. Finally close the window by clicking on **x**.
 
 		<kbd>![](./images/media/MoRE_createCluster8.png)</kbd>
 
